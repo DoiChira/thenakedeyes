@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App bg-black text-white">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +17,16 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <h1 className="p-8">thenakedeyes</h1>
+      <div className='flex justify-between'>
+        <p>jasgchdsc</p>
+        <p>jasgchdsc</p>
+        <p>jasgchdsc</p>
+        <p>jasgchdsc</p>
+        <p>jasgchdsc</p>
+        <p>jasgchdsc</p>
+      </div>
     </div>
   );
 }
