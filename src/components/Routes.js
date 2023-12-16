@@ -11,18 +11,19 @@ import Blog from '../pages/Blog';
 import Workshops from '../pages/Workshops';
 import Contact from '../pages/Contact';
 import FAQs from '../pages/FAQs';
+import OurStory from '../pages/OurStory'
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
-      {/* <Route path="/our-story" component={OurStory} /> */}
-      <Route path="/our-work" component={OurWork} />
-      <Route path="/our-crew" component={OurCrew} />
-      <Route path="/blog" component={Blog} />
-      <Route path="/workshops" component={Workshops} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/faqs" component={FAQs} />
+      <Route path="/" exact element={<Home/>} />
+      <Route path="/our-story" element={<OurStory/>} />
+      <Route path="/our-work" element={<OurWork/>} />
+      <Route path="/our-crew" element={<OurCrew/>} />
+      <Route path="/blog" element={<Blog/>} />
+      <Route path="/workshops" element={<Workshops/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/faqs" element={<FAQs/>} />
     </Switch>
   );
 };
