@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,29 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding on the sides for content spacing */
+}
+.main-container {
+  max-width: 1800px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px;
+  height: 60vh !important
+}
+
+
+  .h-calc-100-minus-20 {
+    height: calc(100vh - 76px);
+    padding-top: 76px;
+  }
+
+ 
+  @media (max-width: 767px) {
+    .gap {
+      margin-top: 12rem;
+    }
+  }
+  
