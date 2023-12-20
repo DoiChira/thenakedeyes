@@ -58,11 +58,118 @@
     height: calc(100vh - 76px);
     padding-top: 76px;
   }
+  .test {
+    margin-top: 150px;
+  }
 
+  .gap {
+    margin-top: 6rem ;
+  }
  
   @media (max-width: 767px) {
     .gap {
-      margin-top: 12rem;
+      margin-top: 2rem ;
     }
   }
+
+  /* Define the slide-up animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.slide-up {
+  animation: slide-up 0.5s ease-out; /* Adjust duration and timing function as needed */
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50%; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .content-overlay {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Set up initial styles */
+.typing-text {
+  overflow: hidden;
+  border-right: .15em solid orange; /* blinking cursor */
+  white-space: nowrap; /* keep text in one line */
+  font-family: monospace; /* for a typewriter effect */
+  animation: typing 2s steps(40) infinite;
+}
+
+/* Keyframes for the typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* For mobile view (up to 768px) */
+@media (max-width: 768px) {
+  #grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    /* Other grid properties */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .button-element-1 {
+    left: 0 !important;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .button-element-1 {
+    left: 320px !important;
+  }
+}
   
+@media only screen and (max-width: 767px) {
+  .button-element-2 {
+    left: 320px !important;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .button-element-2 {
+    left: 320px !important
+  }
+}

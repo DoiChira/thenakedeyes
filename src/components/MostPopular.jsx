@@ -4,13 +4,13 @@ import { styled } from '@mui/system';
 import { Paper, IconButton, Typography, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Image1 from "../assets/about-1.jpg"; // Import your images here
-import Image2 from "../assets/about-2.jpg";
-import Image3 from "../assets/popular-1.jpg";
-import Image4 from "../assets/popular-2.jpg";
-import Image5 from "../assets/popular-3.jpg";
-import Image6 from "../assets/popular-4.jpg";
-import Image7 from "../assets/popular-5.jpg";
+import Image1 from "../assets/about-1.webp"; // Import your images here
+import Image2 from "../assets/about-2.webp";
+import Image3 from "../assets/popular-1.webp";
+import Image4 from "../assets/popular-2.webp";
+import Image5 from "../assets/popular-3.webp";
+import Image6 from "../assets/popular-1.webp";
+import Image7 from "../assets/popular-5.webp";
 
 
 const ImageContainer = styled(Paper)({
@@ -35,14 +35,14 @@ const ImageOverlay = styled('div')({
   justifyContent: 'center',
   alignItems: 'center',
   transform: 'scale(0)',
-  transition: 'transform 0.3s ease-in-out',
+  transition: 'transform 0.1s ease-in-out',
 });
 
 const Image = styled('img')({
   width: '100%',
   height: '100%',
   objectFit: 'cover',
-  transition: 'transform 0.3s ease-in-out',
+  transition: 'transform 0.1s ease-in-out',
   '&:hover': {
     transform: 'scale(1.1)',
   },
@@ -97,7 +97,7 @@ const MostPopular = () => {
       <div className='relative'>
       <Slider {...settings} ref={sliderRef}>
         {images.map((image, index) => (
-          <div key={index}  className={`overflow-hidden p-4 transform transition-transform duration-300 ${
+          <div key={index}  className={`overflow-hidden p-4 transform transition-transform duration-50 ${
             showDescription && currentImage === index ? 'scale-110 shadow-lg' : 'scale-100 shadow'
           }`} onMouseEnter={() => toggleDescription(index)} onMouseLeave={() => toggleDescription(index)}>
             <ImageContainer>
