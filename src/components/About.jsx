@@ -26,14 +26,8 @@ const About = () => {
     <h1 className="text-3xl w-fit md:text-5xl font-bold">
       We are qualified &amp; have years of experience in this field
     </h1>
-    <p className="py-4">
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable.
-    </p>
-    <p className="py-4">
-      The majority have suffered alteration in some form, by injected humour,
-      or randomised words which don't look even slightly believable.
+    <p className="py-8">
+    Dedicated to more than just photography and videography, we are The Naked Eyes, a collective of skilled storytellers. Our expertise lies in immortalizing unspoken emotions and treasured moments, encapsulating the very essence of love in its most unadulterated forms.
     </p>
     <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
       More About Us

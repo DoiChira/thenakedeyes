@@ -8,6 +8,9 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import videoW from "../assets/pixel.mp4"
 import MostPopular from '../components/MostPopular';
+import BabyPhotoshoot from '../components/BabyPhotoshoot';
+import Footer from '../components/Footer';
+import CorporateEvents from '../components/CorporateEvents';
 const VideoContainer = styled(Paper)({
   display: 'flex',
   justifyContent: 'center',
@@ -81,8 +84,10 @@ const OurWork = () => {
       <CustomArrow onClick={goToNext} icon={<ArrowForwardIosIcon fontSize={"large"} />} style={{ right: 50 }} />
     </div>
     <MostPopular/>
+    <CorporateEvents/>
+    <BabyPhotoshoot/>
+    <Footer/>
     </>
-    
   );
 };
 
