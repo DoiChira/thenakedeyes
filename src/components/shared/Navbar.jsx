@@ -10,17 +10,15 @@ const Navbar = () => {
     { label: "OUR WORK", link: "/our-work" },
     { label: "OUR CREW", link: "/our-crew" },
     { label: "BLOG", link: "/blog" },
-    { label: "WORKSHOPS", link: "/workshops" },
     { label: "CONTACT", link: "/contact" },
-    { label: "FAQS", link: "/faqs" },
   ];
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="header fixed w-full top-0 z-50 bg-[#03030267]">
+    <header className={`header fixed w-full top-0 z-50 ${openMenu ? "bg-slate-100" : "bg-[#03030267]"}`}>
       <div className="container">
         <div className="flex items-center justify-between p-4 md:p-6">
-          <a className="brand text-white text-lg md:text-xl" href="/">
+          <a className={`brand text-lg md:text-xl ${openMenu ? "text-slay-900 z-[999]" : "text-white"}`} href="/">
             Logo
           </a>
           <nav className="hidden md:block">
@@ -48,8 +46,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id="mobile-menu" className={`md:hidden ${openMenu ? "" : "hidden"} bg-slate-100 w-[90%] absolute right-0`}>
-        <ul className="text-black text-center py-4">
+      <div id="mobile-menu" className={`md:hidden ${openMenu ? "" : "hidden"} bg-slate-100 w-full absolute right-0`}>
+        <ul className="text-black text-center pt-4 pb-8">
           {
             NAV_LINKS.map((item) => (
               <li key={item.link}>
