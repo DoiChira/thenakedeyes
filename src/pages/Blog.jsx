@@ -55,7 +55,7 @@ const Blog = () => {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${formattedPhoneNumber}&text=${encodeURIComponent(message)}`;
     return (
         <a href={whatsappUrl} className='text-lg bg-green-500 p-2 text-white rounded-sm hover:bg-green-600 flex my-6 items-center justify-center align-middle' target="_blank" rel="noopener noreferrer">
-       <button className='ml-2 '>BOOK NOW</button>
+          <button className='ml-2 '>BOOK NOW</button>
         </a>
     );
 };

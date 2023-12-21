@@ -67,7 +67,7 @@ const RecentWork = () => {
     <>
     <div className='mt-4  relative' >
       <Slider  {...settings} ref={sliderRef}>
-        {videos.map((video, index) => (
+        {videos.map((_, index) => (
           <div key={index} style={{}} className='py-4 px-2 '>
             <VideoContainer>
               <Video autoPlay controls>
