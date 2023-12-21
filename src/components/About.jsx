@@ -1,5 +1,5 @@
 import React from "react";
-import HeroVideo from "../assets/pixel.mp4"
+// import HeroVideo from "../assets/pixel.mp4"
 
 
 const About = () => {
