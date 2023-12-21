@@ -1,112 +1,66 @@
-import React,{ useState }  from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Footer from "../components/Footer"
+import React from 'react';
+
 
 const OurStory = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const handleIndexChange = index => {
-    setActiveIndex(index);
-  };
-
-  const imageUrls = [
-    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1550005809-91ad75fb315f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1551890946-3e5446d3a71b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  ];
+ 
 
   return (
-    <>
-    <div className='' style={{ position: 'relative', width: '100%' }}>
-      <Carousel
-       selectedItem={activeIndex}
-       onChange={handleIndexChange}
-        showThumbs={false}
-        showStatus={false}
-        infiniteLoop={true}
-        centerMode={true}
-        centerSlidePercentage={70}
-        emulateTouch={true}
-        swipeable={true}
-        dynamicHeight={true}
-        autoPlay={true}
-        interval={2000}
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
-            <button
-              onClick={onClickHandler}
-              title={label}
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '10px',
-                zIndex: 2,
-                transform: 'translateY(-50%)',
-                padding: '8px',
-                fontSize: '16px',
-                backgroundColor: '#455a64',
-                borderRadius:"3px",
-                color: '#fff',
-                border: 'none',
-                cursor: 'pointer',
-              }}
-            >
-              <ArrowBackIosIcon/>
-            </button>
-          )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
-            <button
-              onClick={onClickHandler}
-              title={label}
-              style={{
-                position: 'absolute',
-                top: '50%',
-                right: '10px',
-                zIndex: 2,
-                transform: 'translateY(-50%)',
-                padding: '8px',
-                fontSize: '16px',
-                backgroundColor: '#455a64',
-                borderRadius:"3px",
-                color: '#fff',
-                border: 'none',
-                cursor: 'pointer',
-              }}
-            >
-             <ArrowForwardIosIcon/>
-            </button>
-          )
-        }
-      >
-       {imageUrls.map((imageUrl, index) => (
-        <div key={index}>
-          <img
-            src={imageUrl}
-            alt={`Item ${index + 1}`}
-            style={{
-              filter: activeIndex === index ? 'none' : 'blur(6px)', // Apply blur only to inactive images
-              width: '100%', // Adjust image width as needed
-              height: 'auto', // Maintain aspect ratio
-            }}
-          />
-        </div>
-      ))}
-      </Carousel>
+    <section className='mt-[6rem]'>
+    <div className='mt-[2rem] container flex flex-col md:flex-row'>
+    <div className="md:w-2/4 relative mb-2 flex justify-center align-middle ">
+      <img
+        src={ "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        width={100}
+        height={100}
+        alt="Person"
+        className="w-full h-full object-cover rounded"
+      />
     </div>
-    <Footer/>
-    </>
-    
+    <div className="md:w-2/4 pt-10 px-4">
+      <h1 className="text-3xl text-[#18568C] font-bold mb-4">OUR VISION</h1>
+      <p className="py-2 text-xl">
+      At The Naked Eyes, we embark on a journey of excellence where we recognize the profound importance of affordability. Our commitment lies in seamlessly merging quality with accessibility. Whether it's a grand wedding celebration, a corporate product shoot, or any significant event, we invite you to entrust us with the task of capturing your moments and treasures. Through our lens, we enable you to perpetually relive these cherished memories.
+      </p>
+    </div>
+    </div>
+    <div className='mt-[2rem] container flex flex-col md:flex-row'>
+    <div className="md:w-2/4 pt-4 pr-4">
+      <h1 className="text-3xl text-[#18568C] font-bold mb-4">THE STORY</h1>
+      <p className="py-2 text-xl">
+      The genesis of The Naked Eyes traces back to my roots as a freelancer and photojournalist. After years of freelancing in Hyderabad, the winds of change brought me to my hometown, Mankajor, during the onset of COVID. It was during my time engaged in social work that I recognized the untapped potential in the Guwahati market. Fueled by both passion and a keen understanding of business, I made the bold decision to transition from freelancer to entrepreneur.
+      </p >
+      <p className=" text-xl">Taking a leap of faith, I flew from Hyderabad to Guwahati, secured a 3BHK flat, converted my living space into a studio, and birthed my own company – The Naked Eyes. While continuing my pursuits in journalism, I expanded the scope of our services beyond weddings to include corporate projects, product shoots, and all facets of photography.
+      </p>
+    </div>
+    <div className="md:w-2/4 relative mb-2 flex justify-center items-center">
+      <img
+        src={"https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        width={100}
+        height={100}
+        alt="Person"
+        className="w-full h-full object-cover rounded"
+      />
+    </div>
+    </div>
+    <div className='mt-[2rem] container flex flex-col md:flex-row'>
+    <div className="md:w-2/4 relative mb-2 flex justify-center align-middle ">
+      <img
+        src={"https://images.unsplash.com/photo-1551890946-3e5446d3a71b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        width={100}
+        height={100}
+        alt="Person"
+        className="w-full h-full object-cover rounded"
+      />
+    </div>
+    <div className="md:w-2/4 pt-10 px-4">
+      <h1 className="text-3xl text-[#18568C] font-bold mb-4">WHY "THE NAKED EYES"?</h1>
+      <p className="py-2 text-xl">
+      Having been a photojournalist, I firmly believed that a picture should not only be aesthetically pleasing but also convey raw, unfiltered emotion. The name "The Naked Eyes" encapsulates the essence of capturing moments without the embellishments, revealing the unvarnished reality of every bride, parent, and individual at an event. Our goal is to showcase the genuine emotions and diverse perspectives that make each occasion unique, going beyond the surface to capture the authenticity of every moment.
+      </p>
+    </div>
+    </div>
+    </section>
   );
 };
 
 export default OurStory;
-

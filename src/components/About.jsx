@@ -23,8 +23,8 @@ const About = () => {
   </div>
   <div className="md:w-2/4 p-4">
     <h1 className="text-3xl text-[#18568C] font-bold mb-4">About Us</h1>
-    <h1 className="text-3xl w-fit md:text-5xl font-bold">
-      We are qualified &amp; have years of experience in this field
+    <h1 className="text-3xl w-fit md:text-4xl font-bold">
+    Our commitment lies in seamlessly merging quality with accessibility.
     </h1>
     <p className="py-8">
     Dedicated to more than just photography and videography, we are The Naked Eyes, a collective of skilled storytellers. Our expertise lies in immortalizing unspoken emotions and treasured moments, encapsulating the very essence of love in its most unadulterated forms.

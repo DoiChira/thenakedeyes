@@ -173,3 +173,37 @@
     left: 320px !important
   }
 }
+
+.video-info {
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  background-color: rgba(249, 245, 245, 0.178); /* Semi-transparent background */
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999 !important;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.video-caption {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.service-testimonial {
+  text-align: center;
+  background: linear-gradient(#302f2f57, #302f2f57),
+    url(../src/assets/popular-3.webp) 0 0, no-repeat;
+  background-size: cover;
+  /* background-position: 50% 100%; */
+  background-attachment: fixed;
+  padding: 4rem 0;
+  
+  margin-top: 1.5rem;
+}
+

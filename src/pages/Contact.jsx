@@ -3,18 +3,13 @@ import { Box, Button, Container, Typography, Link } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import MapBg from "../assets/map-bg.svg";
 import Heading from "../components/shared/Heading";
-// import { useTheme } from '@mui/material/styles';
 
 const Contact = () => {
-  // const theme = useTheme();
-
   return (
     <section>
       <Container maxWidth="xl" className="mt-20 pt-20">
         <Heading heading="Contact Us" />
-
         <Box className="md:flex md:justify-between md:items-center max-w-md mx-auto text-center md:text-left">
           <Box>
             <Typography variant="body1" className="p-2">
@@ -45,17 +40,8 @@ const Contact = () => {
           </Box>
         </Box>
       </Container>
-      <Box
-        className="map-container"
-        sx={{
-          backgroundImage: `url(${MapBg})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-          paddingBottom: "10%"
-        }}
-      >
-        <Container maxWidth="xl">
+     
+        <Container maxWidth="lg">
           <Box className="mt-20">
             <iframe
               title='map'
@@ -69,7 +55,7 @@ const Contact = () => {
             ></iframe>
           </Box>
         </Container>
-      </Box>
+      
     </section>
   );
 };
