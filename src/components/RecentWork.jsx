@@ -66,18 +66,23 @@ const RecentWork = () => {
   return (
     <>
     <div className='mt-4  relative' >
-      <Slider  {...settings} ref={sliderRef}>
-        {videos.map((_, index) => (
-          <div key={index} style={{}} className='py-4 px-2 '>
-            <VideoContainer>
-              <Video autoPlay controls>
-                <source src={videoW} type="video/mp4" />
-                Your browser does not support the video tag.
-              </Video>
-            </VideoContainer>
-          </div>
-        ))}
-      </Slider>
+    <Slider {...settings} ref={sliderRef}>
+  {videos.map((video, index) => (
+    <div key={index} style={{ position: 'relative' }} className='py-4 px-2 '>
+      <VideoContainer>
+        <Video autoPlay controls>
+          <source src={videoW} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Video>
+      </VideoContainer>
+      <div className="video-info">
+        <h3 className="video-title">Arpita & Kunal | The Naked Eyes</h3>
+        <p className="video-caption">When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!</p>
+      </div>
+    </div>
+  ))}
+</Slider>
+
       <CustomArrow onClick={goToPrev} icon={<ArrowBackIosNewIcon fontSize={"large"} sx={{ borderRadius: "0" }} />} style={{ left: 50 }} />
       <CustomArrow onClick={goToNext} icon={<ArrowForwardIosIcon fontSize={"large"} />} style={{ right: 50 }} />
     </div>
