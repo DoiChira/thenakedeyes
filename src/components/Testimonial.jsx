@@ -70,31 +70,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
-{/* <div class="container service-testimonial">
-<div class="service-testimonial-content">
-  <div class="img-container">
-    <img
-      src="./assets/media/testimonials/testimonials-4.jpg"
-      alt="testimonials-4.jpg"
-    />
-  </div>
-  <h2>Jena Karlis</h2>
-  <p>Store Owner</p>
-  <blockquote>
-    <h3>
-      "Enim nise quem export this Lorem ipsum dolor sit amet
-      consectetur, adipisicing elit. Voluptatibus quibusdam iste
-      id totam explicabo a dolorem quia! Amet quaerat est
-      corrupti! Deleniti!"
-    </h3>
-  </blockquote>
-</div>
-<div class="dot">
-  <span class="two"></span>
-  <span class="two"></span>
-  <span class="one"></span>
-  <span class="two"></span>
-  <span class="two"></span>
-</div>
-</div> */}
