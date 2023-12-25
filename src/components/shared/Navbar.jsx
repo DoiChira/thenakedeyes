@@ -37,11 +37,11 @@ const Navbar = () => {
               }
             </ul>
           </nav>
-          <div className="md:hidden">
+          <div className="md:hidden text-white">
             {
               openMenu
-              ? <CloseIcon onClick={() => setOpenMenu(false)} />
-              : <MenuIcon onClick={() => setOpenMenu(true)} />
+              ? <CloseIcon className=" text-black" onClick={() => setOpenMenu(false)} />
+              : <MenuIcon className=" text-white" onClick={() => setOpenMenu(true)} />
             }
           </div>
         </div>

@@ -14,8 +14,8 @@ const Hero = () => {
 };
 
   return (
-    <section className="hero">
-  <div class="video">
+    <section className="hero ">
+  <div class="video ">
     <video autoPlay loop muted src={HeroVideo}></video>
     <div className="content-overlay">
   <h1 className="text-4xl md:text-6xl pb-4 md:pb-6 font-thin">

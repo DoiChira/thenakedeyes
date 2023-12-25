@@ -13,7 +13,7 @@ const Home = () => {
     <div className='pt-[3rem]'>
     <About/>
     </div>
-     <div className='mt-6rem gap'>
+     <div className=' gap'>
      <h3 className="font-light text-center text-3xl text-black">Recent <strong className='font-extrabold text-[#29679e] '>Work</strong></h3>
      <RecentWork/>
      </div>

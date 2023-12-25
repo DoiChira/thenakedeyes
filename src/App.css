@@ -63,7 +63,7 @@
   }
 
   .gap {
-    margin-top: 6rem ;
+    margin-top: 8rem ;
   }
  
   @media (max-width: 767px) {
@@ -110,7 +110,7 @@
 .content-overlay {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5%;
   transform: translateY(-50%);
   width: 50%; /* Adjust as needed */
   padding: 20px;
