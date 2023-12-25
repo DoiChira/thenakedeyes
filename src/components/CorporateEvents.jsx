@@ -4,13 +4,13 @@ import { styled } from '@mui/system';
 import { Paper, IconButton, Typography, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Image1 from "../assets/about-1.webp"; // Import your images here
-import Image2 from "../assets/about-2.webp";
-import Image3 from "../assets/popular-1.webp";
-import Image4 from "../assets/popular-2.webp";
-import Image5 from "../assets/popular-3.webp";
-import Image6 from "../assets/popular-1.webp";
-import Image7 from "../assets/popular-5.webp";
+import Image1 from "../assets/image 70.png"; // Import your images here
+import Image2 from "../assets/image 74.png";
+import Image3 from "../assets/image 81.png";
+import Image4 from "../assets/pexels-pixabay-207684.png";
+import Image5 from "../assets/image 70.png";
+import Image6 from "../assets/image 74.png";
+import Image7 from "../assets/image 81.png";
 
 
 const ImageContainer = styled(Paper)({

@@ -65,8 +65,8 @@ const RecentWork = () => {
 
   return (
     <>
-    <div className='mt-4  relative' >
-    <Slider {...settings} ref={sliderRef}>
+    <div className='mt-4 relative' >
+    <Slider {...settings} ref={sliderRef} >
   {videos.map((video, index) => (
     <div key={index} style={{ position: 'relative' }} className='py-4 px-2 '>
       <VideoContainer>
