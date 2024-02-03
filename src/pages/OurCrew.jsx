@@ -5,11 +5,12 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import img1 from "../assets/prachi.JPG"
 
 const OurCrew = () => {
   const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: img1,
       title: 'Prachi Harlalka',
       author: 'Founder',
       id:"prachi-harlalka",

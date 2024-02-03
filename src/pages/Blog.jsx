@@ -4,7 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+import img1 from "../assets/sumitCover.jpg"
+import img2 from "../assets/sangeetCover.jpg"
 
 const Blog = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,12 +17,12 @@ const Blog = () => {
     {
       id: 1,
       title: 'Wedding Cinematography',
-      subTitle: 'Dharshinee & Vishal | The Wedding Filmer',
+      subTitle: 'Sangeet & Mansi | The Wedding Filmer',
       date: 'July 22, 2021',
       description:
         'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
       imageUrl:
-        'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        img1,
       link: '/'
     },
     {
@@ -32,20 +33,19 @@ const Blog = () => {
       description:
         'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
       imageUrl:
-        'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      link: '/'
+        img2,
     },
-    {
-      id: 3,
-      title: 'Wedding Cinematography',
-      subTitle: 'Dharshinee & Vishal | The Wedding Filmer',
-      date: 'July 22, 2021',
-      description:
-        'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
-      imageUrl:
-        'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      link: '/'
-    }
+    // {
+    //   id: 3,
+    //   title: 'Wedding Cinematography',
+    //   subTitle: 'Dharshinee & Vishal | The Wedding Filmer',
+    //   date: 'July 22, 2021',
+    //   description:
+    //     'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
+    //   imageUrl:
+    //     'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940949/nakedeye/conzzqggo4tp7zjz9e2z.jpg',
+    //   link: '/'
+    // }
     // Add more objects with similar structure if needed
   ];
 
@@ -61,14 +61,15 @@ const Blog = () => {
 };
 
   const imageUrls = [
-    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1550005809-91ad75fb315f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1551890946-3e5446d3a71b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+    'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941019/nakedeye/r0ixnerou2ojrafin6nr.jpg',
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941003/nakedeye/wvhhlfxgj6ewso4zhdgz.jpg",
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940990/nakedeye/bs4kv7ld7ljewfnw94ng.jpg",
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940927/nakedeye/rlgfkk14ptfu1os2wjsq.jpg",
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940949/nakedeye/conzzqggo4tp7zjz9e2z.jpg",
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+    "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+    
   ];
   return <>
    <div className='py-20 bg-slate-100' style={{ position: 'relative', width: '100%' }}>
@@ -152,7 +153,7 @@ const Blog = () => {
    <div class="flex flex-col lg:flex-row">
   <div class="w-full lg:w-1/3 p-4">
     <div  className="max-w-sm mx-2 my-4 bg-white rounded-lg shadow-md overflow-hidden">
-    <img className="w-full" src={"https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="CardImage"/>
+    <img className="w-full" src={"https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940927/nakedeye/rlgfkk14ptfu1os2wjsq.jpg"} alt="CardImage"/>
       <div className="p-4">
         <p className="text-xl font-semibold mb-2">{'Wedding Cinematography'}</p>
         <p className="text-sm text-gray-600">{'Dharshinee & Vishal | The Wedding Filmer'}</p>

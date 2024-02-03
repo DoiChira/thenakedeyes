@@ -1,5 +1,7 @@
 import React from "react";
 // import HeroVideo from "../assets/pixel.mp4"
+import Image2 from "../assets/sangit4.jpeg";
+import Image1 from "../assets/sumit3.jpeg";
 
 
 const About = () => {
@@ -7,14 +9,14 @@ const About = () => {
     <section className='  flex flex-col md:flex-row'>
   <div className="md:w-2/4 relative mb-10 flex justify-center items-center">
     <img
-      src={"https://images.unsplash.com/photo-1626021483450-609c9808b8ab?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+      src={Image1}
       width={100}
       height={100}
       alt="Person"
       className="w-4/5 h-full object-cover rounded"
     />
     <img
-      src={"https://images.unsplash.com/photo-1626021483450-609c9808b8ab?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+      src={Image2}
       width={100}
       height={100}
       alt="Person"

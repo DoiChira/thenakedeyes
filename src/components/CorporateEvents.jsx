@@ -4,13 +4,13 @@ import { styled } from '@mui/system';
 import { Paper, IconButton, Typography, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Image1 from "../assets/image 70.png"; // Import your images here
-import Image2 from "../assets/image 74.png";
-import Image3 from "../assets/image 81.png";
-import Image4 from "../assets/pexels-pixabay-207684.png";
-import Image5 from "../assets/image 70.png";
-import Image6 from "../assets/image 74.png";
-import Image7 from "../assets/image 81.png";
+import Image1 from "../assets/sumit1.jpeg"; // Import your images here
+import Image2 from "../assets/sumit2.jpeg";
+import Image3 from "../assets/sumit3.jpeg";
+import Image4 from "../assets/sumit4.jpeg";
+import Image5 from "../assets/sumit5.jpeg";
+import Image6 from "../assets/sumit6.jpeg";
+import Image7 from "../assets/sumit7.jpeg";
 
 
 const ImageContainer = styled(Paper)({
@@ -58,7 +58,7 @@ const CorporateEvents = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -98,13 +98,13 @@ const CorporateEvents = () => {
       <Slider {...settings} ref={sliderRef}>
         {images.map((image, index) => (
           <div key={index}  className={`overflow-hidden p-4 transform transition-transform duration-50 ${
-            showDescription && currentImage === index ? 'scale-110 shadow-lg' : 'scale-100 shadow'
+            showDescription && currentImage === index ? 'scale-110 shadow-lg' : 'scale-99 shadow'
           }`} onMouseEnter={() => toggleDescription(index)} onMouseLeave={() => toggleDescription(index)}>
             <ImageContainer>
               <Image src={image}  alt={`Image ${index + 1}`} />
               <ImageOverlay className={showDescription && currentImage === index ? 'overlay' : 'overlay'}>
               <Typography color="white" variant="h6" gutterBottom>
-                Anita & Colm
+                Sumit & Garima
                 <div className='flex justify-center'>
                 <div className='w-[4rem] text-center bg-white py-[1px]'></div>
                 </div>
@@ -112,10 +112,10 @@ const CorporateEvents = () => {
                 <Typography variant="body1" sx={{fontWeight:"bold"}} color="white">
                   01 December 2023
                 </Typography>
-                <Typography variant="body1" sx={{padding:4}} color="white">
+                <Typography variant="body1" sx={{padding:2}} color="white">
                 They struggled for 13 years to be together, because he was Irish and she was Punjabi, but through it all, she knew she wanted a wedding film by us. I met Anita & Colm in London, back in 2019 to discuss her story… 
                 </Typography>
-                <Button variant="text" sx={{marginTop:2,paddingY:"2px", paddingX:"0", borderRadius:"0", borderBottom:"solid", borderWidth:"1px", borderColor:"white", color:"white"}} >
+                <Button variant="text" sx={{marginBottom:2,paddingY:"2px", paddingX:"0", borderRadius:"0", borderBottom:"solid", borderWidth:"1px", borderColor:"white", color:"white"}} >
                   Learn More
                 </Button>
               </ImageOverlay>
