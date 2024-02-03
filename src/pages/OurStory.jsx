@@ -9,7 +9,7 @@ const OurStory = () => {
     <div className='mt-[2rem] container flex flex-col md:flex-row'>
     <div className="md:w-2/4 relative mb-2 flex justify-center align-middle ">
       <img
-        src={ "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        src={ "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940990/nakedeye/bs4kv7ld7ljewfnw94ng.jpg"}
         width={100}
         height={100}
         alt="Person"
@@ -34,7 +34,7 @@ const OurStory = () => {
     </div>
     <div className="md:w-2/4 relative mb-2 flex justify-center items-center">
       <img
-        src={"https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        src={"https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg"}
         width={100}
         height={100}
         alt="Person"
@@ -45,7 +45,7 @@ const OurStory = () => {
     <div className='mt-[2rem] container flex flex-col md:flex-row'>
     <div className="md:w-2/4 relative mb-2 flex justify-center align-middle ">
       <img
-        src={"https://images.unsplash.com/photo-1551890946-3e5446d3a71b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        src={"https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941019/nakedeye/r0ixnerou2ojrafin6nr.jpg"}
         width={100}
         height={100}
         alt="Person"

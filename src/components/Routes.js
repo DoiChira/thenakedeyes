@@ -13,11 +13,25 @@ import Contact from '../pages/Contact';
 import FAQs from '../pages/FAQs';
 import OurStory from '../pages/OurStory'
 import ItemDetailsPage from "../pages/ItemDetailsPage"
+import DetailsPage from "../pages/DetailsPage"
+
+import Image1 from "../assets/sumitCover.jpg"; // Import your images here
+import Image2 from "../assets/sangeetCover.jpg";
+import Image3 from "../assets/sumitCover.jpg";
+import Image4 from "../assets/sangeetCover.jpg";
+import Image5 from "../assets/sumitCover.jpg";
+import Image6 from "../assets/sangeetCover.jpg";
+import Image7 from "../assets/sumitCover.jpg";
+import img1 from "../assets/prachi.JPG"
+
+
+import video1 from "../assets/sumitGarima.mp4"
+import video2 from "../assets/sangeetMansi.mp4"
 
 const Routes = () => {
   const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: img1,
       title: 'Prachi Harlalka',
       author: 'Founder',
       id:"prachi-harlalka",
@@ -40,6 +54,142 @@ const Routes = () => {
     
   ];
 
+  const itemsData = [
+    {
+      img: Image1,
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      date: 'Sumit & Garima | 2022',
+      id:"sumit-garima",
+      featured: true,
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/cm7wag751zxaj4ccon39.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/n72sp8wpamje4jcgca7k.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984373/sumit/axee22bvqqrenejfg4tj.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/j7ogyihivczd2rb8ms2s.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/brmbwc0k5b7r6bovscvt.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984371/sumit/wvwciz1vh3sizc1d9yzl.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/kvzlsyv2dlynhyre735p.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image2,
+      videoUrl: video2,
+      title: 'SANGEET & MANSI | THE NAKED EYE',
+      date: 'Sangeet & Mansi | 2023',
+      id:"sangeet-mansi",
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984913/sangit/b9rb8wut7in8fdrs6lfa.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984903/sangit/dpet7cfpvnaox5xiw8d9.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984900/sangit/dtxhrcfga9al5ax82itv.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984886/sangit/rpekkgyyf8rf4a9gssm7.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984878/sangit/jl2r7gz93v9grmhqrxzl.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984868/sangit/kleikuxdhjbb6zgmkqh8.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984837/sangit/wizyhn2busod4i15rqsw.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984823/sangit/lh0wl0ilycmmkwdsfs8j.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984804/sangit/ids2o1jczspqdu32meci.jpg",
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image3,
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      date: 'Sumit & Garima | 2022',
+      id:"sumit-garima",
+      featured: true,
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/cm7wag751zxaj4ccon39.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/n72sp8wpamje4jcgca7k.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984373/sumit/axee22bvqqrenejfg4tj.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/j7ogyihivczd2rb8ms2s.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/brmbwc0k5b7r6bovscvt.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984371/sumit/wvwciz1vh3sizc1d9yzl.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/kvzlsyv2dlynhyre735p.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image4,
+      videoUrl: video2,
+      title: 'SANGEET & MANSI | THE NAKED EYE',
+      date: 'Sangeet & Mansi | 2023',
+      id:"sangeet-mansi",
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941019/nakedeye/r0ixnerou2ojrafin6nr.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941003/nakedeye/wvhhlfxgj6ewso4zhdgz.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940990/nakedeye/bs4kv7ld7ljewfnw94ng.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940927/nakedeye/rlgfkk14ptfu1os2wjsq.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940949/nakedeye/conzzqggo4tp7zjz9e2z.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image5,
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      date: 'Sumit & Garima | 2022',
+      id:"sumit-garima",
+      featured: true,
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/cm7wag751zxaj4ccon39.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/n72sp8wpamje4jcgca7k.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984373/sumit/axee22bvqqrenejfg4tj.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/j7ogyihivczd2rb8ms2s.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/brmbwc0k5b7r6bovscvt.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984371/sumit/wvwciz1vh3sizc1d9yzl.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/kvzlsyv2dlynhyre735p.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image6,
+      videoUrl: video2,
+      title: 'SANGEET & MANSI | THE NAKED EYE',
+      date: 'Sangeet & Mansi | 2023',
+      id:"sangeet-mansi",
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941019/nakedeye/r0ixnerou2ojrafin6nr.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706941003/nakedeye/wvhhlfxgj6ewso4zhdgz.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940990/nakedeye/bs4kv7ld7ljewfnw94ng.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940927/nakedeye/rlgfkk14ptfu1os2wjsq.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940949/nakedeye/conzzqggo4tp7zjz9e2z.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706940965/nakedeye/psqnsijitwrisvup2dko.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+    {
+      img: Image7,
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      date: 'Sumit & Garima | 2022',
+      id:"sumit-garima",
+      featured: true,
+      imageUrls: [
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/cm7wag751zxaj4ccon39.jpg",
+        'https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984376/sumit/n72sp8wpamje4jcgca7k.jpg',
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984373/sumit/axee22bvqqrenejfg4tj.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/j7ogyihivczd2rb8ms2s.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/brmbwc0k5b7r6bovscvt.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984371/sumit/wvwciz1vh3sizc1d9yzl.jpg",
+        "https://res.cloudinary.com/dlicwfgtq/image/upload/v1706984372/sumit/kvzlsyv2dlynhyre735p.jpg",
+        
+      ],
+      details: "When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!"
+    },
+  ];
+
   return (
     <Switch>
       <Route path="/" exact element={<Home/>} />
@@ -50,6 +200,7 @@ const Routes = () => {
       <Route path="/workshops" element={<Workshops/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/faqs" element={<FAQs/>} />
+      <Route path="/detail/:id" element={<DetailsPage items={itemsData}/>} />
       <Route path="/details/:id" element={<ItemDetailsPage items={itemData}/>}/>
     </Switch>
   );

@@ -15,11 +15,16 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className={`header fixed w-full top-0 z-50 ${openMenu ? "bg-slate-100" : "bg-[#03030267]"}`}>
+    <header className={`header fixed w-full top-0 z-50 ${openMenu ? "bg-slate-100" : "bg-[#1A1A1A]"}`}>
       <div className="container">
         <div className="flex items-center justify-between p-4 md:p-6">
           <a className={`brand text-lg md:text-xl ${openMenu ? "text-slay-900 z-[999]" : "text-white"}`} href="/">
-            Logo
+          <img
+            src="https://res.cloudinary.com/dlicwfgtq/image/upload/v1706929148/bw/makjnf7l0rfsa0krvuiu.jpg"
+            alt="Logo"
+            className="mx-auto "
+            style={{ height: '2rem', fontSize: "1rem" }}
+          />
           </a>
           <nav className="hidden md:block">
             <ul className="flex font-medium space-x-4 text-white">

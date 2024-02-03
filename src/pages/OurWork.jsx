@@ -6,9 +6,9 @@ import { styled } from '@mui/system';
 import { Paper, IconButton } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import videoW from "../assets/pixel.mp4"
+import videoW from "../assets/sangeetMansi.mp4"
+import video1 from "../assets/sumitGarima.mp4"
 import MostPopular from '../components/MostPopular';
-import BabyPhotoshoot from '../components/BabyPhotoshoot';
 import Footer from '../components/Footer';
 import CorporateEvents from '../components/CorporateEvents';
 const VideoContainer = styled(Paper)({
@@ -25,9 +25,11 @@ const Video = styled('video')({
 
 const OurWork = () => {
   const videos = [
-    'video1.mp4',
-    'video2.mp4',
-    'video3.mp4',
+    video1,
+    videoW,
+    video1,
+    videoW,
+    video1,
     // Add more video URLs as needed
   ];
 
@@ -72,8 +74,8 @@ const OurWork = () => {
         {videos.map((video, index) => (
           <div key={index} style={{}} className='py-4 px-2 '>
             <VideoContainer>
-              <Video controls>
-                <source src={videoW} type="video/mp4" />
+              <Video autoPlay controls muted>
+                <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </Video>
             </VideoContainer>
@@ -84,8 +86,10 @@ const OurWork = () => {
       <CustomArrow onClick={goToNext} icon={<ArrowForwardIosIcon fontSize={"large"} />} style={{ right: 50 }} />
     </div>
     <MostPopular/>
+    <div className='mb-8'>
     <CorporateEvents/>
-    <BabyPhotoshoot/>
+    </div>
+    {/* <BabyPhotoshoot/> */}
     <Footer/>
     </>
   );
