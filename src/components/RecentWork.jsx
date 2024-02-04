@@ -24,13 +24,39 @@ const Video = styled('video')({
 
 const RecentWork = () => {
   const videos = [
-    video1,
-    videoW,
-    video1,
-    videoW,
-    video1,
-    // Add more video URLs as needed
+    {
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      caption: 'When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!',
+      id: 1,
+    },
+    {
+      videoUrl: videoW,
+      title: 'SANGEET & MANSI | THE NAKED EYE',
+      caption: 'When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!',
+      id: 2,
+    },
+    {
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      caption: 'When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!',
+      id: 3,
+    },
+    {
+      videoUrl: videoW,
+      title: 'SANGEET & MANSI | THE NAKED EYE',
+      caption: 'When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!',
+      id: 4,
+    },
+    {
+      videoUrl: video1,
+      title: 'SUMIT & GARIMA | THE NAKED EYE',
+      caption: 'When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!',
+      id: 5,
+    }
   ];
+
+  
 
   const sliderRef = useRef(null);
 
@@ -74,13 +100,13 @@ const RecentWork = () => {
     <div key={index} style={{ position: 'relative' }} className='py-4 px-2 '>
       <VideoContainer>
         <Video autoPlay controls muted>
-          <source src={video} type="video/mp4" />
+          <source src={video.videoUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </Video>
       </VideoContainer>
       <div className="video-info">
-        <h3 className="video-title">Arpita & Kunal | The Naked Eyes</h3>
-        <p className="video-caption">When two of our favourite designers finally get married, it’s bound to be ethereal. Kunal looked like a modern day Nawab, and Arpita was so happy to be married, she couldn’t help sway to her mandap. Now you know why I was jumping and hopping to capture her enter!</p>
+        <h3 className="video-title">{video.title}</h3>
+        <p className="video-caption">{video.caption}</p>
       </div>
     </div>
   ))}

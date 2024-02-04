@@ -18,9 +18,9 @@ const Hero = () => {
   <div className="video relative w-full">
   <video autoPlay loop muted className="w-full h-auto" src={HeroVideo}></video>
   <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-    <div className="content-overlay text-center text-black">
+    <div className="content-overlay text-center text-white">
       <h1 className="text-4xl md:text-6xl pb-4 md:pb-6 font-thin">
-        Welcome to<br />
+        Welcome to<br/>
         <strong className="font-bold">The Naked Eyes</strong>
       </h1>
       <p className="hidden md:block text-base md:text-xl">
