@@ -43,18 +43,20 @@ function DetailsPage({ items }) {
         <p class="text-gray-600 text-center text-2xl mb-4">{selectedItem.date}</p>
         <p class="text-gray-700">{selectedItem.details}</p>
       </div>
-       <ImageList id="grid-container"  sx={{ '@media (max-width: 600px)': {cols: 1 },}} cols={3}  gap={8}>
-      {selectedItem.imageUrls.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item}?w=161&fit=crop&auto=format`}
-            alt={"weddingImage"}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
+      <ImageList id="grid-container" cols={3} gap={8}>
+  {selectedItem.imageUrls.map((item) => (
+    <ImageListItem key={item.img} className="group relative overflow-hidden">
+      <img
+        className="transition-transform transform group-hover:scale-110"
+        srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
+        src={`${item}?w=161&fit=crop&auto=format`}
+        alt="weddingImage"
+        loading="lazy"
+      />
+    </ImageListItem>
+  ))}
+</ImageList>
+
       
     </div>
   );

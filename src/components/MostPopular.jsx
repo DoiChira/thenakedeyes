@@ -44,7 +44,7 @@ const ImageOverlay = styled('div')({
 const Image = styled('img')({
   width: '100%',
   height: '100%',
-  objectFit: 'cover',
+  objectFit: 'fit',
   transition: 'transform 0.1s ease-in-out',
   '&:hover': {
     transform: 'scale(1.1)',
@@ -234,7 +234,7 @@ const MostPopular = () => {
       <div className='relative'>
       <Slider {...settings} ref={sliderRef}>
       {itemsData.map((image, index) => (
-        <div key={image.id} className={`overflow-hidden p-4 transform transition-transform duration-50 ${showDescription && currentImage === index ? 'scale-110 shadow-lg' : 'scale-99 shadow'}`} onMouseEnter={() => toggleDescription(index)} onMouseLeave={() => toggleDescription(index)}>
+        <div key={image.id} className={`overflow-hidden px-4 transform transition-transform duration-50 ${showDescription && currentImage === index ? 'scale-110 shadow-lg' : 'scale-99 shadow'}`} onMouseEnter={() => toggleDescription(index)} onMouseLeave={() => toggleDescription(index)}>
           <ImageContainer>
             <Image src={image.img} alt={`Image ${image.id + 1}`} />
             <ImageOverlay className={showDescription && currentImage === index ? 'overlay' : 'overlay'}>

@@ -17,7 +17,7 @@ const Blog = () => {
     {
       id: 1,
       title: 'Wedding Cinematography',
-      subTitle: 'Sangeet & Mansi | The Wedding Filmer',
+      subTitle: 'Sumit & Garima | The Wedding Filmer',
       date: 'July 22, 2021',
       description:
         'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
@@ -28,7 +28,7 @@ const Blog = () => {
     {
       id: 2,
       title: 'Wedding Cinematography',
-      subTitle: 'Dharshinee & Vishal | The Wedding Filmer',
+      subTitle: 'Sangeet & Mansi | The Wedding Filmer',
       date: 'July 22, 2021',
       description:
         'We recently filmed this wedding during the pandemic and we wanted to share it with you, so you too can see how…',
